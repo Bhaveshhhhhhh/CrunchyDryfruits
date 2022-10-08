@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page CrunchyDryFruits</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+    }
+    body {
+      background-color: #fafffe;
+    }
+    .page {
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      background-color: #9dffff;
+      padding: 5%;
+      font-size: 200%;
+    }
+    footer {
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      font-size: large;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 2%;
+    }
+
+    .btn {
+      background-color: #fafffe;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: large;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .btn:hover {
+      background-color: #9dffff;
+      text-decoration: none;
+    }
+    h1 {
+      padding: 3%;
+    }
+  </style>
+  <body>
+    <h1>SignUp Page Of CrunchyDryFruits</h1>
+    <div class="page">
+      <form action="/signup" method="POST">
+        Name:
+        <input
+          type="text"
+          class="box"
+          name="name"
+          id="name"
+          placeholder="eg. XYZ abc"
+          required
+        /><br /><br />
+        Email:
+        <input
+          type="text"
+          class="box"
+          name="email"
+          id="email"
+          placeholder="eg. xyz112@gmail.com"
+          required
+        /><br /><br />
+        Phone:
+        <input
+          type="text"
+          class="box"
+          name="phone"
+          id="phone"
+          placeholder="eg. 0000000000"
+          required
+        /><br /><br />
+        Password:
+        <input
+          type="password"
+          class="box"
+          name="password"
+          id="password"
+          placeholder="eg. Xyz@01010"
+          required
+        /><br /><br />
+        <input class="btn" type="submit" value="submit" id="submit" />
+      </form>
+    </div>
+    <footer>
+      <h2>&copy; 2022 CrunchyDryFruits</h2>
+    </footer>
+  </body>
+</html>

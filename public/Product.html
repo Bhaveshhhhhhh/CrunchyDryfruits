@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Page</title>
+    <style>
+      html {
+        font-size: 22px;
+      }
+      body {
+        padding: 1rem;
+        background-color: #fafffe;
+      }
+      .cards {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+      }
+
+      @media (min-width: 600px) {
+        .cards {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .card {
+        background-color: #9dffff;
+        padding: 1rem;
+        height: 12rem;
+      }
+
+      .badam {
+        width: 90%;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 2%;
+      }
+
+      .btn {
+        background-color: #fafffe;
+        border-radius: 14px;
+        text-decoration: none;
+        font-size: large;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .btn:hover {
+        background-color: #9dffff;
+        text-decoration: none;
+      }
+
+      a:link {
+        text-decoration: none;
+      }
+      h2 {
+        text-align: center;
+        padding: 0%;
+        font-family: "Courier New", Courier, monospace;
+        font-size: medium;
+      }
+      h3 {
+        text-align: center;
+        padding: 0%;
+        font-family: "Courier New", Courier, monospace;
+        font-size: medium;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: larger;
+      }
+      footer {
+        text-align: center;
+      }
+      .page {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        background-color: #9dffff;
+        padding: 5%;
+        font-size: 200%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Products</h1>
+    <div class="cards">
+      <div class="card">
+        <img
+          class="badam"
+          src="https://images7.alphacoders.com/436/thumb-1920-436244.jpg"
+          alt="badam"
+        />
+        <h2>Almond(Badam)</h2>
+        <h3>Price : 700/kg</h3>
+      </div>
+      <div class="card">
+        <img
+          class="badam"
+          src="https://www.foodbusinessafrica.com/wp-content/uploads/2020/11/Cashew-Nut-2.jpg"
+          alt="badam"
+        />
+        <h2>Cashew nut(Kaju)</h2>
+        <h3>Price : 800/kg</h3>
+      </div>
+      <div class="card">
+        <img
+          class="badam"
+          src="https://c4.wallpaperflare.com/wallpaper/473/468/878/pistachios-nuts-shell-white-background-wallpaper-preview.jpg"
+          alt="badam"
+        />
+        <h2>Pistachio(Pista)</h2>
+        <h3>Price : 1000/kg</h3>
+      </div>
+      <div class="card">
+        <img
+          class="badam"
+          src="https://t4.ftcdn.net/jpg/01/18/84/77/360_F_118847714_sP1HpMMv5ZpIXgjKB8MsuFmZ26xlCJNv.jpg"
+          alt="badam"
+        />
+        <h2>Dates(Khajur)</h2>
+        <h3>Price : 70/kg</h3>
+      </div>
+      <div class="card">
+        <img
+          class="badam"
+          src="https://media.istockphoto.com/photos/sweet-dried-fruit-golden-raisins-or-vitis-vinifera-l-var-apyrena-or-picture-id974877044?k=20&m=974877044&s=612x612&w=0&h=HFyR8Dulp60Arm_KhbJGbu6LASe4So_QkFiUUJLnnUE="
+          alt="badam"
+        />
+        <h2>Raisin(Kishmish)</h2>
+        <h3>Price : 360/kg</h3>
+      </div>
+      <div class="card">
+        <img
+          class="badam"
+          src="https://c4.wallpaperflare.com/wallpaper/108/286/328/nuts-leaf-white-background-cut-wallpaper-preview.jpg"
+          alt="badam"
+        />
+        <h2>Walnut(Akhrot)</h2>
+        <h3>Price : 900/kg</h3>
+      </div>
+    </div>
+    <br /><br />
+
+    <div class="button">
+      <a href="miniproject.html"
+        ><button class="btn">CrunchyDryFruits</button></a
+      >
+      <br /><br />
+    </div>
+    <div class="page">
+      <form action="/order" method="POST">
+        Dryfruits Name:
+        <input
+          type="text"
+          class="box"
+          name="name"
+          id="name"
+          placeholder="eg. XYZ abc"
+          required
+        /><br /><br />
+        Quantity:
+        <input
+          type="text"
+          class="box"
+          name="Quantity"
+          id="Quantity"
+          placeholder="eg. 250g or 1kg "
+          required
+        /><br /><br />
+        Phone Number:
+        <input
+          type="text"
+          class="box"
+          name="phone"
+          id="phone"
+          placeholder="eg. 0000000000"
+          required
+        /><br /><br />
+        delivery Address:
+        <input
+          type="text"
+          class="box"
+          name="address"
+          id="address"
+          placeholder="eg. Xyz building"
+          required
+        /><br /><br />
+        <input
+          style="font-size: 25px"
+          class="btn"
+          type="submit"
+          value="Order"
+          id="submit"
+        />
+      </form>
+    </div>
+    <footer><h2>&copy; 2022 CrunchyDryFruits</h2></footer>
+  </body>
+</html>
